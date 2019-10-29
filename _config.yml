@@ -64,19 +64,19 @@ menu:
       on: false
       url: /photo
       type: 1  # 跳转类型 1：站内异步跳转
-    叶落阁:
+    Tujidelv:
       on: false
-      url: http://yelog.org/
+      url: https://lvzhiqiang.top/
       type: 2  # 跳转类型 2：当前页面跳转
     github:
       on: false
-      url: https://github.com/yelog
+      url: https://github.com/tujidelv
       type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 tujide.lv@foxmail.com
 
-bottom_text: ©2016-2019 Yelog
+bottom_text: ©2018-2019 Tujide.lv
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
