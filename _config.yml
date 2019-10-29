@@ -12,29 +12,29 @@ link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
     rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
+    github: https://github.com/tujidelv
+    facebook:
     twitter:
     linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
+    instagram:
+    reddit:
+    weibo: https://weibo.com/u/1963654824
+    jianshu:
+    zhihu:
     csdn:
-    oschina: https://my.oschina.net/yelog
+    oschina:
     juejin:
-    email: jaytp@qq.com
-    qq: 872336115
-    kugou: https://www.kugou.com/
-    neteasemusic: https://music.163.com/#/user/home?id=88151013
+    email: tujide.lv@foxmail.com
+    qq:
+    kugou:
+    neteasemusic:
 
 ##########多作者模式############
 author:
   on: false
   authors:
-    author1: 阿杰
-    author2: 小马哥
+    author1: Tujide.lv
+    author2: 老吕
 ##############################
 
 # 文章分类设置
