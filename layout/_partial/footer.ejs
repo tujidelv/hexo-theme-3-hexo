@@ -641,3 +641,14 @@ jQuery(document).ready(function($) {
 }
 </style>
 <!--end为你的网站加入鼠标滑过抖动样式-->
+<!--start为你得网站加入动态彩色飘带，让网页动起来-->
+<script>
+jQuery(document).ready(function($) {
+    $.getScript('/js/piao.js', function () {
+        if ($(window).width() >= 1024) {
+            $(".nav").css("background","transparent");
+        }
+    });
+});
+</script>
+<!--end为你得网站加入动态彩色飘带，让网页动起来-->
