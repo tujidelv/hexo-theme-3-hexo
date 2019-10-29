@@ -45,6 +45,9 @@ $(document).on({
         if ($(window).width() <= 1024) {
             $(".full-toc .full").trigger("click");
         }
+        /*点击头像时刷新格言鉴赏内容*/
+        $.getScript('/js/gyjs.js', function () {
+        });
     }
 });
 function afterPjax() {
