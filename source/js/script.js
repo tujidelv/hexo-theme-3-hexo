@@ -351,12 +351,16 @@ $(".full-toc .full,.semicircle").click(function (e) {
         content.delay(200).queue(function () {
             $(".full-toc .full").addClass('fullscreen').dequeue();
         });
+
+        $(".post .pjax").css("max-width","1080px");
     } else {
         $(".full-toc .full").children().removeClass("max").addClass("min");
         $(".nav, .hide-list").removeClass("fullscreen");
         content.delay(300).queue(function () {
             $(".full-toc .full").removeClass('fullscreen').dequeue();
         });
+
+        $(".post .pjax").css("max-width","780px");
     }
 });
 
