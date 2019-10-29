@@ -64,11 +64,12 @@
                 if ($(this).closest('figure').hasClass('article-gallery-img')) {
                     return;
                 }
-                var alt = this.alt;
+                //var alt = this.alt;
+                var title = this.title;
                 $(this)
-                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
-                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
-                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" style="display:inline-flex;"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + title + '"></a>');
+                //$(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
             });
         });
 
