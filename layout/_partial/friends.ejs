@@ -6,7 +6,11 @@
     <div class="friends-content">
         <ul>
             <% for (var friend in theme.friends){ %>
-            <li><a target="_blank" href="<%- url_for(theme.friends[friend]) %>"><%=friend %></a></li>
+                <% if(theme.friends[friend]){%>
+                    <li><a target="_blank" href="<%- url_for(theme.friends[friend]) %>"><%=friend %></a></li>
+                <%} else {%>
+                    <li><a href="javascript:void(0);"><%=friend %></a></li>
+                <%}%>
             <% } %>
         </ul>
     </div>
