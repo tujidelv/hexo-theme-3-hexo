@@ -25,6 +25,10 @@
     </div>
     <% } %>
     <nav id="title-list-nav">
+        <a href="javascript:void(0);" id="top" data-tag="timeTop" data-author="timeTop">
+            <span class="post-title" style="width:auto;"><i class="fa fa-heart"></i>感谢陪伴</span>
+            <span class="post-date" id="timeTop" style="color:#cc8167;"></span>
+        </a>
         <% site.posts.forEach(function(post, i){  %>
         <% if (post.hidden === true) { return true } %>
         <a <% if(post.top){%>id="top"<%}%> class="<%= __('all_articles') %> <% post.categories.forEach(function(category, i){ %><%=category.name%> <% }) %>"

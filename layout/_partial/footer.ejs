@@ -56,11 +56,12 @@
                 if ($(this).closest('figure').hasClass('article-gallery-img')) {
                     return;
                 }
-                var alt = this.alt;
+                // var alt = this.alt;
+                var title = this.title;
                 $(this)
-                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
-                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
-                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" style="display:inline-flex;"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + title + '"></a>');
+                // $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
             });
         });
 
@@ -589,3 +590,104 @@
     <%}}%>
 </div>
 <%}%>
+
+<!--自定义-->
+<!--start网站加入点击爱心，心动特效-->
+<script>
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("💗","富强","💗","民主","💗","文明","💗","和谐","💗","自由","💗","平等","💗","公正","💗","法治","💗","爱国","💗","敬业","💗","诚信","💗","友善","💗");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "font-size": "0.5em",
+            "animation": "heartbeat .25s infinite .1s",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+<style>
+@keyframes heartbeat {
+    to {
+        transform: scale(1.4);
+    }
+}
+</style>
+<!--end网站加入点击爱心，心动特效-->
+<!--start为你的网站加入鼠标滑过抖动样式-->
+<style>
+#title-list-nav a:hover {
+    border-radius: 20px;
+    background: #6f9fc7;
+    color: #fff;
+    -webkit-animation: links .2s 2
+}
+</style>
+<!--end为你的网站加入鼠标滑过抖动样式-->
+<!--start为你得网站加入动态彩色飘带，让网页动起来-->
+<script>
+jQuery(document).ready(function($) {
+    $.getScript('/js/piao.js', function () {
+        if ($(window).width() >= 1024) {
+            $(".nav").css("background","transparent");
+        }
+    });
+});
+</script>
+<!--end为你得网站加入动态彩色飘带，让网页动起来-->
+<!--start主页添加格言鉴赏-->
+<script>
+jQuery(document).ready(function($) {
+    $.getScript('/js/gyjs.js', function () {
+    });
+});
+</script>
+<!--end主页添加格言鉴赏-->
+<!--start为你得网站加入毫秒级别建站时间-->
+<script>
+setInterval(function() {
+    var start_timestamp = 1543404968000; //2018-11-28 19:36:08
+    var times = new Date().getTime() - new Date(start_timestamp).getTime();
+    times = Math.floor(times);
+    var days = Math.floor(times / 1000 / (60 * 60 * 24));
+    times %= 60 * 60 * 24000;
+    var hours = Math.floor(times / 1000 / (60 * 60));
+    times %= 60 * 60000;
+    var minutes = Math.floor(times / 60 / 1000);
+    times %= 60000;
+    var seconds = Math.floor(times / 1000);
+    times %= 1000;
+    var ms = Math.floor(times);
+    if (String(ms).length == 1) {
+        ms = "00" + String(ms)
+    };
+    if (String(ms).length == 2) {
+        ms = "0" + String(ms)
+    };
+    $("#timeTop").html(days + " 天 " + hours + " 小时 " + minutes + " 分 " + seconds + " 秒 " + ms + " 毫 ")
+}, 1);
+</script>
+<!--end为你得网站加入毫秒级别建站时间-->
+<!--start添加音乐-->
+<div style="position:absolute; bottom: 0; right: 0;">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1294924781&auto=1&height=66"></iframe>
+</div>
+<!--end添加音乐-->

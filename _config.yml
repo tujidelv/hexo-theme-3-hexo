@@ -1,7 +1,7 @@
 version: 1.1.0
 # 你的头像url
-avatar: /img/avatar.jpg
-favicon: /img/avatar.jpg
+avatar: /img/avatar.gif
+favicon: /img/favicon.gif
 
 #如果博客放置位置不是根目录，则可以通过配置此路径解决静态文件路径错误问题
 # 比如访问地址为 yelog.org/blog 那就需要配置为 blog_path: /blog 才能正常访问
@@ -12,29 +12,29 @@ link:
   theme: color # 链接样式，color: 彩色图标  white: 黑白图标
   items:
     rss: /atom.xml
-    github: https://github.com/yelog
-    facebook: https://www.facebook.com/faker.tops
+    github: https://github.com/tujidelv
+    facebook:
     twitter:
     linkedin:
-    instagram: https://www.facebook.com/faker.tops
-    reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
-    jianshu: https://www.jianshu.com/u/ff56736de7cf
-    zhihu: https://www.zhihu.com/people/jaytp/activities
+    instagram:
+    reddit:
+    weibo: https://weibo.com/u/1963654824
+    jianshu:
+    zhihu:
     csdn:
-    oschina: https://my.oschina.net/yelog
+    oschina:
     juejin:
-    email: jaytp@qq.com
-    qq: 872336115
-    kugou: https://www.kugou.com/
-    neteasemusic: https://music.163.com/#/user/home?id=88151013
+    email: tujide.lv@foxmail.com
+    qq:
+    kugou:
+    neteasemusic:
 
 ##########多作者模式############
 author:
   on: false
   authors:
-    author1: 阁主
-    author2: 小马哥
+    author1: Tujide.lv
+    author2: 老吕
 ##############################
 
 # 文章分类设置
@@ -76,31 +76,24 @@ menu:
       type: 1  # 跳转类型 1：站内异步跳转
     叶落阁:
       on: false
-      url: http://yelog.org/
+      url: https://lvzhiqiang.top/
       type: 2  # 跳转类型 2：当前页面跳转
     github:
       on: false
-      url: https://github.com/yelog
+      url: https://github.com/tujidelv
       type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 tujide.lv@foxmail.com
 
-bottom_text: ©2016-2020 Yelog
+bottom_text: ©2013-2024 Tujide.lv
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
-
-# 底部备案号
-miit:
-  on: false
-  info: 京ICP证030173号
-  url: http://beian.miit.gov.cn/ # 默认链接为 http://beian.miit.gov.cn/
-
 
 reward: true
 # true 开启打赏功能
 
-searchAll: false
+searchAll: true
 # true 启用全文搜索
 # 开启此功能需要下面操作：
 # 1. 在 hexo 根目录 执行 npm install hexo-generator-search --save 安装插件
@@ -110,10 +103,10 @@ searchAll: false
 #   field: post
 
 
-copyright: false
+copyright: true
 # Copyright info. of post | 文末版权信息
 
-word_count: false
+word_count: true
 # true 开启字数统计
 # 开启此功能需要安装插件 ：在 hexo根目录 执行npm i hexo-wordcount --save
 
@@ -135,15 +128,15 @@ article_list:
   title: '#383636' # 文章列表标题颜色
   datetime: '#5e5e5f' # 文章发布日期颜色
   hover:
-    background: '#e2e0e0'  # 背景色:提供几种：'#c1bfc1'  '#fbf4a8'
+    background: '#c1bfc1'  # 背景色:提供几种：'#c1bfc1'  '#fbf4a8'  '#e2e0e0'
     color:     # 文字颜色 提供几种：'#ffffff'
 # 注意：由于颜色如果包含#，使用单引号 ' 引起来
 
 # 文章列表背景图
 article_bg_img:
-  on: false # 是否开启
-  src: https://i.loli.net/2019/07/22/5d3521411f3f169375.png
-  opacity: 0.3 # 背景图透明度，范围 0 ～ 1
+  on: true # 是否开启
+  src: /img/article-list-background.jpeg
+  opacity: 0.1 # 背景图透明度，范围 0 ～ 1
 
 # 列表样式
 list: normal
@@ -225,10 +218,22 @@ mermaid:
 # 友情链接
 friends:
   叶落阁: http://yelog.org/
+  Lawlite的博客: http://lawlite.me/
+  闪烁之狐: https://blinkfox.github.io/
+  iHTCboy's blog: https://ihtcboy.com/
+  喵斯基部落-运维之美: https://www.moewah.com/
+  --------------------:
+  hexo 轻博客: https://hexo.lvzhiqiang.top
+  ytube 油管镜像: https://ytube.lvzhiqiang.top/
+  avbook 影片資料庫: https://avbook.lvzhiqiang.top/
+  searx 元搜索引擎: https://search.lvzhiqiang.top/
+  bt 宝塔面板: https://bt.lvzhiqiang.top/
+  magnet 磁力搜: https://magnet.lvzhiqiang.top/
+
 
 ##########评论设置#############
 comment:
-  on: false
+  on: true
   type: gitalk  # 评论系统：gitalk、disqus、gitment、utteranc、livere,注意：使用时，在下方对应位置进行配置
   comment_count: true  # 文章标题下方显示评论数 目前仅支持 gitalk 和 disqus
   ## 使用说明 https://yelog.org//2020/05/23/3-hexo-comment/
@@ -241,11 +246,11 @@ disqus:
 
 
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
-  ClientID:
-  ClientSecret:
-  adminUser: yelog
+  githubID: tujidelv
+  repo: tujidelv.github.io
+  ClientID: 4bdc7aeb9be54f5ffd64
+  ClientSecret: db1b2cd5f2b8929f7737bdc8c9f4cd05ba754d30
+  adminUser: tujidelv
   distractionFreeMode: true
   language: zh-CN
   perPage: 10
@@ -287,15 +292,18 @@ utteranc:
 
 ##########CND设置#############
 CDN:
-  jquery: //cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js
-  jquery_cookie: //cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js
-  highlight: //cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js
-  pjax: //cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js
-  animate: //cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css
-  nprogres_js: //cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js
-  mathjax: //cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML
-  photoswipe_js: //cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js
-  photoswipe_ui_js: //cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js
-  photoswipe_css: //cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css
-  photoswipe_skin_css: //cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css
+  jquery: //cdn.bootcss.com/jquery/2.2.4/jquery.min.js
+  jquery_cookie: //cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js
+  jquery_ui: //cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js
+  jquery_ui_css: //cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css
+  highlight: //cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js
+  pjax: //cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js
+  animate: //cdn.bootcss.com/animate.css/3.5.2/animate.min.css
+  font_awsome: //cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+  nprogres_js: //cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js
+  mathjax: //cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML
+  photoswipe_js: //cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.js
+  photoswipe_ui_js: //cdn.bootcss.com/photoswipe/4.1.2/photoswipe-ui-default.min.js
+  photoswipe_css: //cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.css
+  photoswipe_skin_css: //cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.min.css
 ##############################

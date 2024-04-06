@@ -63,6 +63,9 @@ $(document).on({
                 $fullBtn.children().removeClass("mobile");
             }
         }
+        /*点击头像时刷新格言鉴赏内容*/
+        $.getScript('/js/gyjs.js', function () {
+        });
     },
     'click': function (e) {
         $(".nav-right .tags-list").hide()
@@ -716,13 +719,13 @@ function bind() {
     /*初始化 img*/
     if (img_resize !== 'photoSwipe') {
         content.find('img:not([data-ignore])').each(function () {
-            if (!$(this).parent().hasClass('div_img')) {
+            /*if (!$(this).parent().hasClass('div_img')) {
                 $(this).wrap("<div class='div_img'></div>");
                 var alt = this.alt;
                 if (alt) {
                     $(this).after('<div class="img_alt"><span>' + alt + '</span></div>');
                 }
-            }
+            }*/
             if ($(window).width() > 426) {
                 $(this).on("click", function (e) {
                     var _that = $(this);
